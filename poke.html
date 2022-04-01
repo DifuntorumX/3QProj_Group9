@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pisaymon</title>
+        <link rel="icon" type="image/x-icon" href="pisay.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="pokemon.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+        <audio style="position: fixed; right: 0px; top: 0px;" controls autoplay>
+            <source src="battle_music.mp3" type="audio/mp3">
+        </audio>
+
+        <a class="move1" style="font-family: 'Pokemon'; color: black; font-size: 3rem; position: fixed; top: 0px; right: 28%" href="developer.html">About the Developers</a>
+        
+        <div>
+            <div class="sprites">
+                <div class="pisay">
+                    <img style="width: 20%; position: fixed; right: 17%; top: 10%; transform: scaleX(-1);" src="pisay.png" alt="pisay">
+                </div>
+                <div class="student">
+                    <img style="position: fixed; bottom: 30%; left: 20%; width: 30%; height: 20%; transform: scaleX(-1);" src="student.png" alt="xabi">
+                </div>
+            </div>
+
+            <div class="moveSelection">
+                <div class="moveset">
+                    <div class="row1">
+                        <button type="button" class="move" onclick="doreq()">DO REQS</button>
+                        <button type="button" class="move2" onclick="sleep()">SLEEP</button>
+                    </div>
+    
+                    <div class="row2">
+                        <button type="button" class="move" onclick="cry()" oncontextmenu="javascript:alert('Math and ValEd attack -1 for 3 turns'); return false">CRY</button>
+                        <button type="button" class="move2" onclick="run()">RUN</button>
+                    </div>
+                </div>
+            </div>
+
+            
+    
+            <div class="details">
+                <div class="name">
+                    <h1>STUDENT starts doing requirements! (Press "DO REQS")</h1>
+                    <h1>Health: <span class="studentHealth"></span>/30</h1>
+                    <h1 class="fake"></h1>
+                    <h1 class="run"></h1>
+                </div>
+            </div>
+
+            <div class="enemyDetails">
+                <h2 style="margin-left: 3%; margin-top: 2%; font-size: 3.5rem;"> REQUIREMENTS </h2>
+                <h2 style="margin-left: 3%; margin-top: 2%; font-size: 3.5rem;"> Health: <span class="enemyHealth"></span>/50 </h2>
+            </div>
+
+            
+        </div>
+        <script src="pokemon.js"></script>       
+    </body>
+</html>
